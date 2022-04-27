@@ -19,7 +19,7 @@ from rest_framework.documentation import include_docs_urls
 from rest_framework_swagger.views import get_swagger_view
 
 API_TITLE = 'States And Capitals API'
-API_DESCRIPTION = 'A Web API for accessing information (such as the capital, governor,slogan, etc) about every state in Nigeria .'
+API_DESCRIPTION = 'A Web API for accessing information (such as the capital, governor,slogan, etc) about every state in Nigeria.'
 schema_view = get_swagger_view(title=API_TITLE) 
 
 urlpatterns = [

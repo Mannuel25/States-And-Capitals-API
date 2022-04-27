@@ -5,7 +5,7 @@ from .models import States
 class StateSerializer(serializers.ModelSerializer):
     class Meta:
         model = States
-        fields = ('id','state','capital','governor', 
+        fields = ('id','contributor','state','capital','governor', 
             'slogan','foundation_year','lgas','no_of_lgas')
 
 class UserSerializer(serializers.ModelSerializer):
