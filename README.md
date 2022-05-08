@@ -1,7 +1,14 @@
 # States And Capitals API
 
-##### A Web API for accessing information (such as the capital, governor, slogan, etc) about every state in Nigeria.
+### A Web API for accessing information about every state in Nigeria. This information includes:
+- Capital
+- Governor
+- Slogan
+- Local Government Areas
 
-##### Link: 127.0.0.1:8000/api/v1/
+## Steps to run locally:
 
-##### Swagger Docs URL: 127.0.0.1:8000/swagger-docs/
+- Clone the project:
+- Run pip install requirements.txt to install all the required dependencies.
+- Run python manage.py runserver in the project root folder.
+- Navigate to http://127.0.0.1:8000/swagger-docs/ to view the endpoints and their documentation.

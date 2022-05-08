@@ -3,6 +3,7 @@ from .serializers import StateSerializer, UserSerializer
 from .models import States
 from .permissions import IsAuthorOrReadOnly
 from django.contrib.auth import get_user_model
+
 class StatesViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = States.objects.all()
