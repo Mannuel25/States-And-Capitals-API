@@ -13,8 +13,8 @@
 - Run python manage.py runserver in the project root folder.
 - Navigate to http://127.0.0.1:8000/swagger-docs/ to view the endpoints and their documentation.
 
-## Technologies Used:P
+## Technologies Used:
 - Python(Django)
 - Django REST Framework
-- PostgrSQL
+- PostgreSQL
 - Heroku
