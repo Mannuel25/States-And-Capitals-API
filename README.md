@@ -10,7 +10,7 @@
 
 - Clone the project:
 - Run pip install requirements.txt to install all the required dependencies.
-- Run python manage.py runserver in the project root folder.
+- Run python manage.py runserver in the project root folder: http://127.0.0.1:8000/api/v1/
 - Navigate to http://127.0.0.1:8000/swagger-docs/ to view the endpoints and their documentation.
 
 ## Technologies Used:
