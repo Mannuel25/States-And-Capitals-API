@@ -1,4 +1,4 @@
-# States And Capitals API
+# Nigeria Sates And Capitals API
 
 ### A Web API for accessing information about every state in Nigeria. This information includes:
 - Capital
