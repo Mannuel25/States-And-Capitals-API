@@ -18,17 +18,14 @@ from django.urls import path, include
 from rest_framework.documentation import include_docs_urls
 from rest_framework_swagger.views import get_swagger_view
 
-API_TITLE = 'States And Capitals API'
-API_DESCRIPTION = 'A Web API for accessing information (such as the capital, governor,slogan, etc) about every state in Nigeria. Last Updated: 08/05/2022'
+API_TITLE = 'Nigeria States and Capitals API'
+API_DESCRIPTION = 'A Web API for accessing information (such as the capital, governor, slogan, etc) about every state in Nigeria. Last Updated: 08/05/2022'
 schema_view = get_swagger_view(title=API_TITLE) 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
     path('api-auth/', include('rest_framework.urls')),
-    path('api/v1/rest-auth/', include('rest_auth.urls')),
-    path('api/v1/rest-auth/registration/', include('rest_auth.registration.urls')),
-    path('docs/', include_docs_urls(title=API_TITLE, 
-        description=API_DESCRIPTION)),
-    path('swagger-docs/', schema_view),
+    path('docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
+    path('swagger/', schema_view),
 ]
