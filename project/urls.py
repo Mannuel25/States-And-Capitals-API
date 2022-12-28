@@ -18,6 +18,8 @@ from django.urls import path, include
 from rest_framework.documentation import include_docs_urls
 from rest_framework_swagger.views import get_swagger_view
 from django.conf.urls.static import static
+from django.conf import settings
+
 
 API_TITLE = 'Nigeria States and Capitals API'
 API_DESCRIPTION = 'A Web API for accessing information (such as the capital, governor, slogan, etc) about every state in Nigeria. Last Updated: 08/05/2022'
