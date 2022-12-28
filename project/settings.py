@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nigeria-states-api.up.railway.app', 'localhost',]
+ALLOWED_HOSTS = ['nigeria-states-api.up.railway.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -155,5 +155,6 @@ USE_L10N = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
