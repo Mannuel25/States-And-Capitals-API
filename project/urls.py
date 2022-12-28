@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.documentation import include_docs_urls
 from rest_framework_swagger.views import get_swagger_view
+from django.conf.urls.static import static
 
 API_TITLE = 'Nigeria States and Capitals API'
 API_DESCRIPTION = 'A Web API for accessing information (such as the capital, governor, slogan, etc) about every state in Nigeria. Last Updated: 08/05/2022'
@@ -29,3 +30,5 @@ urlpatterns = [
     path('docs/', include_docs_urls(title=API_TITLE, description=API_DESCRIPTION)),
     path('swagger/', schema_view),
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
