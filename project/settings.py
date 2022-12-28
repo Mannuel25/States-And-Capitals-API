@@ -135,6 +135,7 @@ SWAGGER_SETTINGS = {
     'LOGOUT_URL': 'rest_framework:logout',
 }
 
+CSRF_TRUSTED_ORIGINS = ['nigeria-states-api.up.railway.app']
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
